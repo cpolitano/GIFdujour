@@ -1,35 +1,13 @@
-# Gif of the Day!
+* GIF Du Jour *
 
-Create a jQuery plugin that shows the latest gif given a category.
+GIF Du Jour is a jQuery plugin I built as a class project at General Assembly Web Development Immersive. The plugin uses the Giphy API to return the most recent GIF in a category specified by the user.
 
-Example usage:
+** Install **
 
-    $('.gif-container').gifOfTheDay({
-      category: 'cats'
+Add '$('.gif-container').gifDuJour();' to a JavaScript file to call the plugin on a given DOM element.
+
+GIF Du Jour supplies Gifs from the movie Amelie by default, but you can specify your own category like this:
+
+    $('.gif-container').gifDuJour({
+      	category: 'Amelie'
     });
-
-## Step 1
-
-Create a new html document and link to jQuery. Add a `<div>` with the class `gif-container`.
-
-## Step 2
-
-When a user adds `$('.gif-of-the-day').gifOfTheDay();` to their javascript,
-the text of the div should be set to "gif here"
-
-## Step 3
-
-Instead of setting the text, use `$.getJSON` to fetch the latest gif from some
-hardcoded category, and add the first image to the container div.
-
-## Step 4
-
-Allow users to specify their own category by accepting options.
-
-    $('.gif-container').gifOfTheDay({
-      category: 'cats'
-    });
-
-## Bonus !
-
-Add a previous and next button. Clicking on "next" should show the next gif from the api.
